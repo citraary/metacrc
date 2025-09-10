@@ -5,7 +5,7 @@ import numpy as np
 
 # Load the trained Random Forest model
 try:
-    model = joblib.load('metastasis_model.pkl')
+    model = joblib.load('metastasis_rf_model.pkl')
     st.success("✅ Model loaded successfully!")
 except:
     st.warning("⚠️ Model file not found. Using fallback predictions.")
@@ -141,3 +141,4 @@ with st.expander("ℹ️ About This Tool"):
 # Footer
 st.markdown("---")
 st.caption("Built for research purposes | Not for clinical decision making | v1.0")
+
